@@ -10,7 +10,6 @@ version: 1.1.4
 #    target: _blank    是否跳出，省略则在当前页面打开
 menu:
   home:
-    text: 主页
     url: /
   archives:
     url: /archives
@@ -19,25 +18,23 @@ menu:
   th-list:
     text: Categories
     url: /categories
+  contao:
+    text: CSDN
+    url: http://blog.csdn.net/wudaijun
+    target: _blank
   github:
-    url: https://github.com/yscoder
+    url: https://github.com/wudaijun
     target: _blank
-  weibo:
-    url: http://www.weibo.com/ysweb
-    target: _blank
-  link:
-    text: 测试
-    url: /404
 
 rss: /atom.xml
 
 #你的头像url
-avatar: /img/logo.jpg
+avatar: /favicon.png
 #favicon
 favicon: /favicon.ico
 
 # email
-email: 634206017@qq.com
+email: wdjlost@gmail.com
 
 # 设置 Android L Chrome 浏览器状态栏颜色
 color: '#3F51B5'
@@ -58,10 +55,10 @@ archive_yearly: true
 share: true
 
 #是否开启打赏，关闭 reward: false
-reward:
-  title: 谢谢大爷~
-  wechat: /img/wechat.jpg     #微信，关闭设为 false
-  alipay: /img/alipay.jpg     #支付宝，关闭设为 false
+reward: false
+#  title: 谢谢大爷~
+#  wechat: /img/wechat.jpg     #微信，关闭设为 false
+#  alipay: /img/alipay.jpg     #支付宝，关闭设为 false
 
 #是否开启搜索
 search: true
@@ -72,13 +69,13 @@ hideMenu: true
 #是否开启toc
 #toc: false
 toc:
-  list_number: true  # 是否显示数字排序
+  list_number: false  # 是否显示数字排序
 
 #文章页版权声明内容，hexo中所有变量及辅助函数等均可调用，具体请查阅 hexo.io
 copyright: 这里写留言或版权声明：<a href="<%- url_for(page.path).replace(/index\.html$/, '') %>" target="_blank" rel="external"><%- url.replace(/index\.html$/, '') %></a>
 
 #站长统计，如要开启，输入CNZZ站点id，如 cnzz: 1255152447
-cnzz: false
+cnzz: 1254033667
 
 # Miscellaneous
 google_analytics: false
@@ -92,9 +89,9 @@ less:
 
 #是否开启多说评论，填写你在多说申请的项目名称 duoshuo: duoshuo-key
 #主题内置github风格多说样式，基于多说 BlueBox 主题修改，需要在多说后台设置中修改外观主题
-duoshuo: ysblog
+duoshuo: false
 #若使用disqus，请在博客config文件中填写disqus_shortname，并关闭多说评论
-disqus_shortname: false
+disqus_shortname: wudaijun
 
 # 规范网址
 # 让搜索引擎重定向你的不同域名、不同子域、同域不同目录的站点到你期望的路径
